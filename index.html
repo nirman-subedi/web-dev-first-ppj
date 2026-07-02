@@ -3,59 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - My Portfolio</title>
+    <title>Welcome - Modern Website</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Navigation -->
     <nav class="navbar">
-        <div class="container">
-            <div class="logo">My Portfolio</div>
-            <ul class="nav-links">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+        <div class="nav-container">
+            <div class="logo">MyWebsite</div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
         </div>
     </nav>
 
-    <main>
-        <section class="hero">
-            <div class="container">
-                <h1>Welcome to My Portfolio</h1>
-                <p>Discover my work, thoughts, and projects</p>
-                <a href="about.html" class="btn">Learn More</a>
-            </div>
-        </section>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Welcome to Our Website</h1>
+            <p class="hero-subtitle">Create something amazing today</p>
+            <button class="cta-button">Get Started</button>
+        </div>
+        <div class="hero-background"></div>
+    </section>
 
-        <section class="featured">
-            <div class="container">
-                <h2>Featured Content</h2>
-                <div class="grid">
-                    <div class="card">
-                        <h3>Latest Blog Post</h3>
-                        <p>Check out my latest thoughts and insights on web development.</p>
-                        <a href="blog.html" class="link">Read Blog →</a>
-                    </div>
-                    <div class="card">
-                        <h3>About Me</h3>
-                        <p>Learn more about my background, skills, and experience.</p>
-                        <a href="about.html" class="link">Learn More →</a>
-                    </div>
-                    <div class="card">
-                        <h3>Get in Touch</h3>
-                        <p>Have a project in mind? Let's connect and discuss.</p>
-                        <a href="contact.html" class="link">Contact Me →</a>
-                    </div>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-content">
+            <h2>About Us</h2>
+            <p>We are dedicated to creating beautiful and functional digital experiences. Our team is passionate about design and innovation.</p>
+            <div class="features">
+                <div class="feature-card">
+                    <div class="feature-icon">🚀</div>
+                    <h3>Fast</h3>
+                    <p>Lightning-quick performance</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎨</div>
+                    <h3>Beautiful</h3>
+                    <p>Modern and elegant design</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Secure</h3>
+                    <p>Your data is protected</p>
                 </div>
             </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 My Portfolio. All rights reserved.</p>
         </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+            <div class="service-item">
+                <h3>Web Design</h3>
+                <p>Beautiful, responsive websites tailored to your needs</p>
+            </div>
+            <div class="service-item">
+                <h3>Development</h3>
+                <p>Robust and scalable web applications</p>
+            </div>
+            <div class="service-item">
+                <h3>Consulting</h3>
+                <p>Expert guidance for your digital strategy</p>
+            </div>
+            <div class="service-item">
+                <h3>Support</h3>
+                <p>Ongoing maintenance and optimization</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Get In Touch</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 MyWebsite. All rights reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
