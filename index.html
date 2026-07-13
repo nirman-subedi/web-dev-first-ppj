@@ -3,97 +3,152 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome - Modern Website</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Nirman Subedi - Portfolio</title>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="logo">MyWebsite</div>
-            <ul class="nav-menu">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#services" class="nav-link">Services</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-        </div>
+
+<header>
+    <h1>Nirman Subedi</h1>
+    <p>Frontend Developer &mdash; Kathmandu, Bagmati Province, Nepal</p>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </nav>
+</header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1 class="hero-title">Welcome to Our Website</h1>
-            <p class="hero-subtitle">Create something amazing today</p>
-            <button class="cta-button">Get Started</button>
-        </div>
-        <div class="hero-background"></div>
+<main>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="nirman pp.jpg" alt="Portrait of Nirman Subedi" width="200" height="200">
+        <p>
+            I am a Computer Engineering student at the Model Institute of Technology
+            (MIT Nepal) and a frontend developer at Cagtu Nepal. I build production
+            web applications with React and Next.js, ranging from travel discovery
+            platforms and music streaming apps to e-commerce storefronts and
+            operations dashboards. Recent work includes Darsan Nepal, a Nepal
+            tourism discovery platform;,</p><p> Homaale, a task and product marketplace;
+            Mugeet, a music streaming app; and the KoseliFoods, KoseliMart, and
+            MithooSweet e-commerce and mart-management platforms. I enjoy turning
+            messy data and API responses into clean, usable interfaces, and I have
+            a background in networking, databases, and ethical hacking from my
+            coursework.
+        </p>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="about-content">
-            <h2>About Us</h2>
-            <p>We are dedicated to creating beautiful and functional digital experiences. Our team is passionate about design and innovation.</p>
-            <div class="features">
-                <div class="feature-card">
-                    <div class="feature-icon">🚀</div>
-                    <h3>Fast</h3>
-                    <p>Lightning-quick performance</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🎨</div>
-                    <h3>Beautiful</h3>
-                    <p>Modern and elegant design</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🔒</div>
-                    <h3>Secure</h3>
-                    <p>Your data is protected</p>
-                </div>
-            </div>
-        </div>
+    <section id="skills">
+        <h2>Skills</h2>
+        <dl>
+            <dt>JavaScript &amp; TypeScript</dt>
+            <dd>Primary languages for all frontend work, including strict typing of API responses.</dd>
+
+            <dt>React &amp; Next.js (App Router)</dt>
+            <dd>Building server-rendered and client-rendered pages, layouts, and route handlers.</dd>
+
+            <dt>UI Libraries</dt>
+            <dd>Mantine UI and Tailwind CSS for building and styling component libraries.</dd>
+
+            <dt>API Integration</dt>
+            <dd>Axios-based API clients, JWT authentication, and normalising paginated REST responses.</dd>
+
+            <dt>Backend Familiarity</dt>
+            <dd>Django REST Framework and SimpleJWT, enough to design and debug against real endpoints.</dd>
+
+            <dt>Tools</dt>
+            <dd>Postman, Apidog, and Git for testing, documenting, and versioning API-driven applications.</dd>
+
+            <dt>Foundations</dt>
+            <dd>C and C++, databases, networking basics, and cybersecurity fundamentals.</dd>
+        </dl>
     </section>
 
-    <!-- Services Section -->
-    <section id="services" class="services">
-        <h2>Our Services</h2>
-        <div class="services-grid">
-            <div class="service-item">
-                <h3>Web Design</h3>
-                <p>Beautiful, responsive websites tailored to your needs</p>
-            </div>
-            <div class="service-item">
-                <h3>Development</h3>
-                <p>Robust and scalable web applications</p>
-            </div>
-            <div class="service-item">
-                <h3>Consulting</h3>
-                <p>Expert guidance for your digital strategy</p>
-            </div>
-            <div class="service-item">
-                <h3>Support</h3>
-                <p>Ongoing maintenance and optimization</p>
-            </div>
-        </div>
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <article>
+            <h3>Darsan Nepal</h3>
+            <p>
+                A Next.js travel discovery platform for Nepal, featuring hotel, place,
+                and tour listings with detail pages, image galleries, interactive maps,
+                and a booking form. Data for hotels and destinations was enriched with
+                verified GPS coordinates and contact information sourced from Google
+                Places.
+            </p>
+            <p>
+                <a href="https://github.com/nirman-subedi/darsan-nepal" target="_blank" rel="noopener">
+                    View Repository on GitHub
+                </a>
+            </p>
+        </article>
+
+        <article>
+            <h3>Koseli Delivery Admin Dashboard</h3>
+            <p>
+                An internal admin dashboard for a food delivery business, built with
+                Next.js, Mantine UI, and Tailwind CSS against a Django REST Framework
+                backend. Includes delivery cluster and order management pages,
+                infinite-scroll multi-select filters, paginated data tables, and
+                downloadable delivery slips.
+            </p>
+            <p>
+                <a href="https://github.com/nirman-subedi/koseli-admin-dashboard" target="_blank" rel="noopener">
+                    View Repository on GitHub
+                </a>
+            </p>
+        </article>
+
+        <article>
+            <h3>Homaale</h3>
+            <p>
+                A task, service, and product-selling platform built with Next.js.
+                Users can offer or request services, open shops, and sell products,
+                with server-side rendering, API integration, and role-based
+                dashboards.
+            </p>
+            <p>
+                <a href="https://github.com/nirman-subedi/homaale" target="_blank" rel="noopener">
+                    View Repository on GitHub
+                </a>
+            </p>
+        </article>
+
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <h2>Get In Touch</h2>
-        <form class="contact-form">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" rows="5" required></textarea>
-            <button type="submit" class="submit-btn">Send Message</button>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="#" method="post">
+            <p>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </p>
+            <p>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </p>
+            <p>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="6" cols="40" required></textarea>
+            </p>
+            <p>
+                <button type="submit">Send Message</button>
+            </p>
         </form>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <p>&copy; 2026 MyWebsite. All rights reserved.</p>
-    </footer>
+</main>
 
-    <script src="script.js"></script>
+<footer>
+    <p>&copy; 2026 Nirman Subedi. All rights reserved.</p>
+    <ul>
+        <li><a href="mailto:natioosi7569@gmail.com">natioosi7569@gmail.com</a></li>
+        <li><a href="tel:+9779828816113">+977 9828816113</a></li>
+        <li><a href="https://linkedin.com/in/nirman-subedi-1524b0343" target="_blank" rel="noopener">LinkedIn</a></li>
+    </ul>
+</footer>
+
 </body>
 </html>
