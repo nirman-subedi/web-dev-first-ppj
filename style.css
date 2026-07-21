@@ -1,0 +1,384 @@
+/* ==========================================================================
+   Nirman Subedi — Portfolio Stylesheet
+   Simple, professional, responsive.
+   ========================================================================== */
+
+:root {
+    --color-bg: #ffffff;
+    --color-bg-alt: #f7f7f8;
+    --color-text: #1f2328;
+    --color-text-muted: #5b6270;
+    --color-border: #e4e6eb;
+    --color-primary: #2f3e9e;      /* indigo */
+    --color-primary-dark: #232f7c;
+    --color-accent: #e0942f;       /* marigold */
+
+    --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+
+    --max-width: 960px;
+    --radius: 8px;
+}
+
+/* ---- Reset & base ---- */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-body);
+    color: var(--color-text);
+    background: var(--color-bg);
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    color: var(--color-primary-dark);
+    text-decoration: underline;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
+}
+
+/* ---- Layout ---- */
+main,
+header,
+footer {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+section {
+    padding: 48px 0;
+    border-bottom: 1px solid var(--color-border);
+}
+
+section:last-of-type {
+    border-bottom: none;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.25;
+    font-weight: 700;
+    color: var(--color-text);
+}
+
+h2 {
+    font-size: 1.6rem;
+    margin: 0 0 24px;
+    padding-bottom: 10px;
+    text-align: center;
+    position: relative;
+}
+
+h2::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 3px;
+    background: var(--color-primary);
+    border-radius: 2px;
+}
+
+/* ---- Header ---- */
+header {
+    max-width: 100%;
+    background: var(--color-primary);
+    color: #fff;
+    padding: 48px 24px 32px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0 0 4px;
+    color: #fff;
+    font-size: 2rem;
+}
+
+header p {
+    margin: 0 0 20px;
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    position: relative;
+    color: #fff;
+    padding: 8px 4px;
+    font-size: 0.95rem;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 4px;
+    right: 4px;
+    bottom: 4px;
+    height: 2px;
+    background: #fff;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.15s ease;
+}
+
+nav a:hover,
+nav a:focus {
+    text-decoration: none;
+}
+
+nav a:hover::after,
+nav a:focus::after {
+    transform: scaleX(1);
+}
+
+/* ---- About ---- */
+#about {
+    display: flex;
+    gap: 32px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+#about h2 {
+    width: 100%;
+}
+
+#about img {
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border: 3px solid var(--color-accent);
+    flex-shrink: 0;
+}
+
+#about p {
+    flex: 1;
+    min-width: 240px;
+    color: var(--color-text-muted);
+    margin: 0;
+}
+
+/* ---- Skills ---- */
+#skills dl {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+    margin: 0;
+}
+
+.skill-item {
+    padding: 16px 18px;
+    background: var(--color-bg-alt);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+}
+
+#skills dt {
+    font-weight: 700;
+    color: var(--color-primary-dark);
+    margin-bottom: 6px;
+}
+
+#skills dd {
+    margin: 0;
+    color: var(--color-text-muted);
+    font-size: 0.95rem;
+}
+
+/* ---- Projects ---- */
+#projects article {
+    background: var(--color-bg-alt);
+    border: 1px solid var(--color-border);
+    border-left: 3px solid var(--color-primary);
+    border-radius: var(--radius);
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: box-shadow 0.15s ease, transform 0.15s ease;
+}
+
+#projects article:hover {
+    box-shadow: 0 4px 14px rgba(47, 62, 158, 0.1);
+    transform: translateY(-2px);
+}
+
+#projects article:last-child {
+    margin-bottom: 0;
+}
+
+#projects h3 {
+    margin: 0 0 8px;
+    font-size: 1.2rem;
+    color: var(--color-primary);
+}
+
+#projects p {
+    color: var(--color-text-muted);
+    margin: 0 0 12px;
+}
+
+#projects article p:last-child {
+    margin-bottom: 0;
+}
+
+#projects a {
+    font-weight: 600;
+}
+
+/* ---- Contact form ---- */
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#contact form {
+    width: 100%;
+    max-width: 480px;
+}
+
+#contact p {
+    margin: 0 0 16px;
+    text-align: left;
+}
+
+#contact label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 6px;
+    font-size: 0.95rem;
+}
+
+#contact input,
+#contact textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    font-family: inherit;
+    font-size: 1rem;
+    background: var(--color-bg-alt);
+}
+
+#contact input:focus,
+#contact textarea:focus {
+    border-color: var(--color-primary);
+    background: #fff;
+}
+
+#contact form p:last-child {
+    text-align: center;
+}
+
+#contact button {
+    background: var(--color-primary);
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: var(--radius);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.15s ease;
+}
+
+#contact button:hover {
+    background: var(--color-primary-dark);
+}
+
+/* ---- Footer ---- */
+footer {
+    max-width: 100%;
+    background: var(--color-bg-alt);
+    border-top: 1px solid var(--color-border);
+    padding: 32px 24px;
+    text-align: center;
+    color: var(--color-text-muted);
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0 0 12px;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 600px) {
+    header {
+        padding: 36px 20px 24px;
+    }
+
+    header h1 {
+        font-size: 1.6rem;
+    }
+
+    section {
+        padding: 36px 0;
+    }
+
+    #about {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #about img {
+        width: 120px;
+        height: 120px;
+    }
+
+    #skills dl {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ---- Reduced motion ---- */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        transition: none !important;
+    }
+}
